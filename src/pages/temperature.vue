@@ -1,11 +1,12 @@
-  <script setup>
-  import { computed, ref } from 'vue';
-  import TheHeader from './components/TheHeader.vue';
-  import TheNav from './components/TheNav.vue';
+<script setup>
+import { computed, ref } from 'vue';
+import TheHeader from '../components/TheHeader.vue';
+import TheNav from '../components/TheNav.vue';
 
-  import BaseInputNumber from './components/bases/BaseInputNumber.vue';
+import BaseInputNumber from '../components/bases/BaseInputNumber.vue';
 
-  const tempSi = ref(0); // kelvin
+
+const tempSi = ref(0); // kelvin
 
   const kelvin = computed({
     get: () => {
@@ -34,28 +35,10 @@
     }
   });
 
-
-
-  // const temp = 20;
-  // const temperature = ref(20);
-  // console.log(temperature.value);
-  // setTimeout(() => {
-  //   temperature.value = 5;
-  // }, 2000);
-
-  // const isCold = computed(() => {
-  //   return temperature.value < 10;
-  // });
-
-  // const test = ref([]);
-
-  // function setKelvin(event) {
-  //   kelvin.value = event.target.value;
-  // }
 </script>
 
 <template>
-  <TheHeader>Converter App</TheHeader>
+ <TheHeader>Converter App</TheHeader>
   <TheNav></TheNav>
 
   <!-- <input type="number" :value="kelvin" @input="setKelvin"/> -->
@@ -70,10 +53,6 @@
   <BaseInputNumber symbol="°F" v-model="fahrenheit"/>
 </template>
 
-<style scoped>
-
-</style>
-
 <style>
  * {
   box-sizing: border-box;
@@ -84,3 +63,4 @@
   font-family: Consolas, monospace;
  }
 </style>
+
