@@ -1,7 +1,5 @@
 <script setup>
 import { computed, ref } from 'vue';
-import TheHeader from '../components/TheHeader.vue';
-import TheNav from '../components/TheNav.vue';
 
 import BaseInputNumber from '../components/bases/BaseInputNumber.vue';
 
@@ -38,9 +36,6 @@ const tempSi = ref(0); // kelvin
 </script>
 
 <template>
- <TheHeader>Converter App</TheHeader>
-  <TheNav></TheNav>
-
   <!-- <input type="number" :value="kelvin" @input="setKelvin"/> -->
   <!-- <input type="number" v-model="tempSi"/> -->
   <BaseInputNumber
