@@ -1,4 +1,4 @@
-import {ref} from 'vue'; 
+import {ref, computed} from 'vue'; 
 import Temperature from '../pages/temperature.vue';
 import Weight from '../pages/weight.vue';
 
